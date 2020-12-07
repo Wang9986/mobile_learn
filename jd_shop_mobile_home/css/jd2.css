@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+   /* overflow-x: scroll;
+   -webkit-overflow-scrolling: touch; */
+}
+/* 搜索栏开始 */
+.box{
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    overflow: hidden;
+    display: flex;
+}
+
+.footer,
+.header{
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 10;
+    display: flex;
+    position: fixed;
+}
+
+.header{
+    top: 0;
+    height: 44px;
+    display: flex;
+}
+
+.header .Drawback{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    flex: 1;
+}
+
+.header .Drawback i{
+    width: 20px;
+    height: 20px;
+    background: url(../img/jd-sprites.png) no-repeat -20px 0px/200px 200px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: block;
+    transform: translate(-50%,-50%);
+}
+
+.header .search{
+    flex: 8;
+    margin: auto;
+    position: relative;
+}
+
+.header .search i{
+    width: 20px;
+    height: 20px;
+    background: url(../img/jd-sprites.png) no-repeat -80px 3px/200px 200px;
+    top: 50%;
+    left: 2%;
+    position: absolute;
+    transform: translate(0%,-50%);
+}
+
+.header .search input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #f7f7f7;
+    border-radius: 30px;
+    text-indent: 40px;
+}
+
+.header .more{
+    height: 40px;
+    flex: 1;
+    position: relative;
+}
+
+.header .more i{
+    width: 30px;
+    height: 30px;
+    background: url(../img/jd-sprites.png) no-repeat -122px -2px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+/*搜索栏结束*/
+
+
+/* 产品列表开始 */
+.sidebar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.sidebar .sidebar_left,
+.sidebar_right{
+    height: 100%;
+    margin: 44px 0 70px 0;
+}
+
+.sidebar .sidebar_left{
+    width: 20%;
+    min-width: 60px;
+    flex: 1;
+}
+
+.sidebar .sidebar_left ul{
+    background: #f8f8f8;
+}
+
+.sidebar .sidebar_left ul li{
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 46px;
+}
+
+.sidebar .sidebar_right{
+    width: 80%;
+    min-width: 180px;
+    flex: 3;
+    background: #FFFFFF;
+}
+
+.sidebar .sidebar_right ul li{
+    width: 100%;
+    display: none;
+}
+
+.sidebar .sidebar_left ul .hover{
+    background: #e4393c;
+    color: white;
+}
+
+/* 产品列表结束 */
+
+
+
+
+
+/* 底部开始 */
+.footer{
+  min-height: 40px;
+  max-height: 70px;
+  bottom: 0;
+  box-shadow: 1px 1px 10px #CCCCCC;
+}
+
+.footer ul{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.footer ul li{
+  width: 20%;
+}
+
+
+.footer ul li a img{
+    display: block;
+    max-height: 75px;
+    min-height: 35px;
+    min-width: 30%;
+    max-width: 75%;
+    margin: auto;
+}
+/* 底部结束 */
